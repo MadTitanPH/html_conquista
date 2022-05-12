@@ -1,0 +1,386 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif, cursive, 'Courier New', Courier, monospace;
+}
+
+/*ELEMENTOS GLOBAIS - ESTUTURAIS*/
+.btn {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: goldenrod;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.header {
+    height: 80px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.281);
+    position: fixed;
+    top: 0;
+}
+
+nav{
+    height: 100%;
+    
+}
+
+nav ul {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    margin-right: 12px;
+}
+
+nav ul li{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: goldenrod;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.banner {
+    background-image: url('../images/bannerbg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.banner-left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ranking-area {
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    border: 4px solid rgb(255, 0, 0);
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+
+.ranking-header{
+    height: 70px;
+    width: 100%;
+    display: flex;
+}
+
+.ranking-header img{
+    height: 100px;
+    width: 100%;
+}
+
+.banner-right{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.description-area{
+width: 650px;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.description-titulo{
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: chartreuse;
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: yellow;
+}
+
+.description-content{
+    color: rgb(255, 0, 0);
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.233);
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: justify;
+
+}
+
+.description-content a{
+    text-decoration: none;
+    color: yellow;
+    font-size: 24px;
+    font-weight: 350px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: rgba(0, 255, 170, 0);
+    padding: 3px;
+    border-radius: 4px;
+}
+
+
+
+
+.ranking-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.ranking-item {
+    display: flex;
+    width: 100%;
+    border: 1px solid #00000000;
+    padding: 6px;
+    margin-bottom: 6px;
+}
+
+.item-avatar {
+    height: 40px;
+    width: 40px;
+    /*border: 1px solid #000000;*/
+    
+}
+
+.item-avatar img{
+    height: 40px;
+    width: 40px;
+}
+
+.item-content{
+    flex: 1;
+    height: 40px;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.item-score{
+    color: white;
+    flex: 1;
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: chartreuse;
+    
+}
+
+.item-conquistas {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    justify-content: space-around;
+}
+.item-conquistas img{
+    height: 20px;
+    width: 20px;
+    
+}
+
+.footer {
+    height: 80px;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.288);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+}
+
+.footer-left, .footer-center, .footer-right{
+    flex: 1;
+    color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.footer-center{
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-redes{
+    display: flex;
+    width: 100%;
+
+    justify-content: space-between;
+
+}
+
+.footer-redes a{
+    text-decoration: none;
+    font-size: 30px;
+    color: greenyellow;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    min-width: 210px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.233);
+    z-index: 1;
+    border-radius: 8px;
+    margin-top: 80px;
+}
+
+.login-area{
+    width: 280px;
+    height: auto;
+}
+
+.form-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content{
+    margin-top: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 6;
+}
+
+.input-area{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 8px;
+}
+
+.input-area label{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.input-area input{
+    border: 0;
+    outline: 0;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 14;
+    width: 100%;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-text{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.form-text a{
+    text-decoration:  none;
+    color: #fff;
+}
+
+.form-btn-area{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.show{
+    display: block;
+
+}
+
+.model{
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+div{  seleção por nome da tag
+    background-color: rgb(47, 0, 255);
+    width: 200px;
+    height: 200px;
+}
+
+#boxid {seleção por nome da id
+    background-color: black;
+    width: 160px;
+    height: 160px;
+}
+
+.box {seleção por nome da class
+    background-color: darkred;
+    width: 100px;
+    height: 100px;
+}
+
+
+todas precisam ser 
+    conferir tamanho (width height
+    conferir display
+    conferir espaçamentos margin|padding
+    conferir position
+*/
