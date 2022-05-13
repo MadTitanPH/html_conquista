@@ -162,29 +162,29 @@ flex-direction: column;
 
 
 
-.ranking-list{
+.ranking-list, .meuranking-conquistas{
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 40px;
 }
 
-.ranking-item {
+.ranking-item, .meuranking-conquista {
     display: flex;
     width: 100%;
-    border: 1px solid #00000000;
+    border: 1px solid #000;
     padding: 6px;
     margin-bottom: 6px;
 }
 
-.item-avatar {
+.item-avatar, .conquista-img {
     height: 40px;
     width: 40px;
     /*border: 1px solid #000000;*/
     
 }
 
-.item-avatar img{
+.item-avatar img, .conquista-img img{
     height: 40px;
     width: 40px;
 }
